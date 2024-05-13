@@ -1,226 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="tables.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Sedan+SC&display=swap"
-      rel="stylesheet"
-    />
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <title>CHeat Sheet Home Page</title>
-  </head>
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><span class="logo">CH</span>eat</li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#html-section">HTML</a></li>
-          <li><a href="#css-section">CSS</a></li>
-          <li><a href="#about" disabled>About</a></li>
-          <li><a href="#contact" id="contact-link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+nav {
+  background-color: olivedrab;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
 
-    <!-- main content  -->
-    <section class="home-section" id="home">
-      <h1>Welcome</h1>
-      <div class="picture-box"></div>
-      <p class="summary">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-        aspernatur non necessitatibus, ad distinctio corporis atque aperiam
-        molestias ipsam sunt itaque, eos blanditiis qui similique recusandae
-        maxime facere dignissimos aliquid deleniti at nisi quae? Voluptate
-        deleniti blanditiis officiis aliquam quaerat asperiores nobis est
-        adipisci ducimus eum iusto tenetur praesentium saepe rem quas numquam
-        illum accusantium maxime totam, veniam dolorum facilis provident
-        sapiente! Fuga, eius dolores ab animi laborum provident modi blanditiis,
-        voluptates est soluta fugit?
-      </p>
-      <div class="adv-box"></div>
-    </section>
+nav ul li {
+  display: inline-block;
+  margin: 15px 30px;
+  list-style: none;
+  font-size: 1.5em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+nav ul li span {
+  color: white;
+}
 
-    <main id="home">
-      <!-- html beginning -->
-      <section class="box html-description" id="html-section">
-        <article>
-          <h1>HTML</h1>
-          <h2>What is HTML?</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
-            harum vitae quos recusandae officia quam quia perspiciatis facere
-            incidunt! Ipsum dolores vitae harum placeat fuga, sunt porro quam!
-            Fugit, ut ipsam dolorum est unde et voluptatum laboriosam sunt
-            dolorem, impedit ipsum, incidunt nihil itaque possimus! Quas iste
-            aliquid consequatur qui!
-          </p>
-        </article>
+nav ul li span:hover {
+  color: red;
+}
 
-        <table class="html-table">
-          <thead>
-            <caption>
-              HTML Tags
-            </caption>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Characteristic</th>
-              <th scope="col">Example</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>html</td>
-              <td>Lorem ipsum dolor sit amet.</td>
-              <td>This is an example</td>
-            </tr>
-            <tr>
-              <td>head</td>
-              <td>Lorem ipsum dolor sit amet.</td>
-              <td>This is an example</td>
-            </tr>
-            <tr>
-              <td>body</td>
-              <td>Lorem ipsum dolor sit amet.</td>
-              <td>This is an example</td>
-            </tr>
-            <tr>
-              <td>footer</td>
-              <td>Lorem ipsum dolor sit amet.</td>
-              <td>This is an example</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="box projects-box">
-          <h2>Examples using tables</h2>
-          <ul>
-            <li>
-              <a href="../examples exercises/visualRules" target="_blank"
-                >Visual Rules Project</a
-              >
-            </li>
-            <li>Project 2</li>
-            <li>project 3</li>
-            <li>Project 4</li>
-            <li>project 5</li>
-          </ul>
-        </div>
-        <a href="#home"></a>
-      </section>
+nav ul li a:hover {
+  color: red;
+  background-color: beige;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+}
 
-      <!-- css beginning  -->
-      <section class="box css-description" id="css-section">
-        <article class="css-article">
-          <h1>Styling with CSS</h1>
-          <h2>What is CSS?</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
-            harum vitae quos recusandae officia quam quia perspiciatis facere
-            incidunt! Ipsum dolores vitae harum placeat fuga, sunt porro quam!
-            Fugit, ut ipsam dolorum est unde et voluptatum laboriosam sunt
-            dolorem, impedit ipsum, incidunt nihil itaque possimus! Quas iste
-            aliquid consequatur qui!
-          </p>
-        </article>
+p {
+  line-height: 1.5;
+  padding: 25px;
+}
 
-        <div class="box projects-box">
-          <h2>Examples styling websites</h2>
-          <ul>
-            <li>
-              <a
-                href="../examples exercises/aoifeconleavys-site"
-                target="_blank"
-                >Aoifecon's Site Project</a
-              >
-            </li>
-            <li>
-              <a href="../examples exercises/burguerMenu" target="_blank"
-                >Burger's Mennu Project</a
-              >
-            </li>
-            <li>
-              <a
-                href="../examples exercises/healthyRecipes"
-                target="_blank"
-                >Healthy Recipe's Project</a
-              >
-            </li>
-            <li>
-              <a href="../examples exercises/wearebroadway" target="_blank"
-                >Broadway's Site Project</a
-              >
-            </li>
-            <li>
-              <a
-                href="../examples exercises/oliviaWoodPortfolio"
-                target="_blank"
-                >Olivia's Site Project</a
-              >
-            </li>
-          </ul>
-        </div>
+/* welcome section  */
+.home-section {
+  background-color: rgb(234, 217, 185);
+  height: 65vh;
+  margin: 10px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+}
 
-        <article class="css-article">
-          <h2>CSS Properties</h2>
-          <h3>
-            How to use attributes to change the look and feel of your websited
-          </h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
-            harum vitae quos recusandae officia quam quia perspiciatis facere
-            incidunt! Ipsum dolores vitae harum placeat fuga, sunt porro quam!
-            Fugit, ut ipsam dolorum est unde et voluptatum laboriosam sunt
-            dolorem, impedit ipsum, incidunt nihil itaque possimus! Quas iste
-            aliquid consequatur qui!
-          </p>
-        </article>
-      </section>
-    </main>
+@media screen and (max-width: 412px) {
+  nav ul {
+    display: inline-block;
+  }
 
-    <!-- Dialog messages -->
-    <dialog class="modal" id="modal">
-      <h1>Get In Touch</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis
-        dolorum nobis, a odio praesentium facilis quas ipsam quia autem.
-      </p>
-      <form action="">
-        <label for="">Name</label><br />
-        <input type="text" />
-        <label for="">Email</label><br />
-        <input type="email" /><br />
-        <textarea name="" id="" cols="5" rows="10"></textarea>
-        <button type="submit" class="button close-button">Close</button>
-      </form>
-    </dialog>
+  nav ul li {
+    font-size: 14px;
+  }
 
-    <footer>
-      <p>Copyright 2024</p>
-      <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAUVBMVEXVKx7////YOi7TDwDTFwDroZz229rzzcvtrqrUIA/njojfc27ql5LienTUJhjRAADfYFj34N/qnJbcYVr109H89PTbVU7us7D77u3sqaXhbWW5YWrIAAAAqklEQVRoge3Zyw7CIBBGYbT1gsrUKrbS939Ql25+0mggpvac9eTbMmGcq9e2og0OvijcvMjK4HY9iYIvgre7jahvKuJ7cHBwcHBw8MXj1ui6m8S7zLhXuN3jQdcr/JEZjsEE7s/K+LyLBwcHBwcHXxduw3iUpaiMZ9LT46QeaGetLrdaZMbfHzH/sXGBg4ODg4ODF8aTwgsdRGwIomn+UPTzI9TXgYOvAn8Be3sahFdC1PgAAAAASUVORK5CYII="
-        alt=""
-      />
-      <p><span>CH</span> - Suisse</p>
-    </footer>
+  .home-section {
+    background-color: rgb(234, 217, 185);
+    height: 100%;
+    margin: 10px;
+    padding-top: 75px;
+    display: inline-block;
+    flex-direction: column;
+  }
 
-    <script>
-      const modal = document.querySelector("#modal");
-      const openModal = document.querySelector("#contact-link");
-      const closeModal = document.querySelector(".close-button");
+  table {
+    display:none;
+  }
+}
 
-      openModal.addEventListener("click", () => {
-        modal.showModal();
-      });
+.home-section h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+  /* background-color: rgb(0, 0, 0, 0.5); */
+  color: black;
+  border-radius: 20px;
+  /* position: absolute; */
+  /* display: inline-block; */
+  text-align: center;
+  width: 100%;
+}
 
-      closeModal.addEventListener("click", () => {
-        modal.close();
-      });
-    </script>
-  </body>
-</html>
+.picture-box {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  margin: 25px auto;
+  border-radius: 50%;
+}
+
+.summary {
+  margin: 0 25px;
+}
+
+/* html section */
+
+.box {
+  background-color: gainsboro;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.box h1,
+.box h2 {
+  font-size: 40px;
+  /* text-align: right; */
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px auto;
+}
+
+.box p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.html-description {
+  height: 100%;
+}
+
+/* html table */
+table {
+  margin: 0 auto;
+  /* background-color: beige; */
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 10px;
+}
+
+.projects-box {
+  background-color: azure;
+  margin: 10px;
+}
+
+.projects-box h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.projects-box ul {
+  text-align: center;
+}
+
+.projects-box ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+}
+
+/* css section */
+.css-article {
+  margin: 15px;
+}
+
+.css-article p {
+  margin: 10px;
+}
+
+footer {
+  position: sticky;
+  background-color: olivedrab;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+footer p {
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+}
+
+footer p span:hover {
+  color: red;
+  transition: 0.5s ease-in;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+/* modal */
+.modal::backdrop {
+  background-color: black;
+  opacity: 0.6;
+}
+
+.modal {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 500px;
+  padding: 1.5em;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
