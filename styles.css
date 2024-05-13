@@ -59,14 +59,26 @@ p {
   flex-direction: column;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 412px) {
+  nav ul {
+    display: inline-block;
+  }
+
+  nav ul li {
+    font-size: 14px;
+  }
+
   .home-section {
     background-color: rgb(234, 217, 185);
-    height: 65vh;
+    height: 100%;
     margin: 10px;
-    padding-top: 125px;
-    display: flex;
+    padding-top: 75px;
+    display: inline-block;
     flex-direction: column;
+  }
+
+  table {
+    display:none;
   }
 }
 
@@ -118,6 +130,10 @@ p {
 .box p {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.html-description {
+  height: 100%;
 }
 
 /* html table */
