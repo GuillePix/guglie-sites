@@ -59,7 +59,7 @@ p {
   flex-direction: column;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 765px) {
   nav ul {
     display: inline-block;
   }
@@ -78,7 +78,7 @@ p {
   }
 
   table {
-    display:none;
+    display: none;
   }
 }
 
@@ -96,14 +96,12 @@ p {
   width: 100%;
 }
 
-.picture-box {
-  background-color: red;
-  width: 200px;
-  height: 200px;
-  margin: 25px auto;
-  border-radius: 50%;
+img {
+  width: 150px;
+  padding: 25px;
+  border-radius: 60px;
+  float: left;
 }
-
 .summary {
   margin: 0 25px;
 }
