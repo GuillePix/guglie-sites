@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  /* background-color: rgb(199, 199, 171); */
+  box-shadow: 0 1px 0 1px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-logo img {
+  /* padding: 10px; */
+  width: 100px;
+  border-radius: 50px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0 25px;
+  transition: all 1.25s ease;
+  font-size: 2.5rem;
+}
+
+nav ul li a:hover {
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  background-color: red;
+  border-radius: 15px;
+  /* color: rgb(55, 55, 55); */
+  color: snow;
+  letter-spacing: 7.5px;
+}
+
+nav ul .icons-menu {
+  display: none;
+}
+
+/* main banner */
+.main-banner {
+  /* height: 50vh; */
+  background: url(./img/pexels-goumbik-669584.jpg);
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-banner h1 {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  width: 50%;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 1px 2px 0 0;
+  margin: 40px;
+}
+
+.main-banner p {
+  padding: 20px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+  }
+
+  .main-banner h1 {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    /* width: 90%; */
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 1px 2px 0 0;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  nav ul {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    padding: 0 25px;
+    transition: all 1.25s ease;
+    font-size: 1.5rem;
+  }
+
+  .main-banner h1 {
+    padding: 5px;
+    background: rgba(186, 78, 78, 0.4);
+    width: 95%;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 0 0;
+    margin: 15px;
+    overflow: hidden;
+  }
+
+  .services-container {
+    /* padding: 20px 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pictures-gallery img {
+    object-fit: fill;
+    padding: 0 5px;
+  }
+}
+
+/* services section */
+
+.services-container {
+  padding: 20px 10px;
+  /* background-color: burlywood; */
+}
+
+.services-container img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.pictures-gallery {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.services-container h2 {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  background: rgba(10, 10, 10, 0.2);
+  width: 250px;
+  border-radius: 250px;
+}
+
+/* team section */
+.team-container {
+  text-align: center;
+}
+.team-container h2 {
+  margin: 10px;
+}
+.pts-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
+.pt {
+  display: block;
+  text-align: center;
+  height: 500px;
+  width: 300px;
+  /* border: 1px solid black; */
+  align-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 1s ease-out;
+}
+
+.pt:nth-child(1):hover {
+  background-color: rgba(0, 255, 119, 0.613);
+}
+
+.pt:nth-child(2):hover {
+  background-color: rgba(225, 0, 255, 0.613);
+}
+
+.pt:nth-child(3):hover {
+  background-color: rgba(0, 128, 255, 0.613);
+}
+
+.pt:nth-child(4):hover {
+  background-color: rgba(255, 0, 0, 0.613);
+}
+
+.pt:hover {
+  color: white;
+}
+
+.pt img {
+  width: 250px;
+  height: 300px;
+  object-fit: contain;
+  padding: 5px;
+  transition: all 1.5s ease-in-out;
+}
+
+.pt img:hover {
+  transform: rotateY(90deg);
+}
+
+.pt img:nth-child(1) {
+  transform: rotateY(90deg);
+}
+
+/* video presentation */
+.video-container {
+  margin: 10px auto;
+  background: url("./img/pexels-victorfreitas-1092885.jpg");
+  background-size: cover;
+}
+.video-container video {
+  margin: 10px 10px;
+  border: 1px solid black;
+}
+
+.video-container h2,
+h3 {
+  color: whitesmoke;
+}
+
+.video-container p {
+  color: whitesmoke;
+  font-weight: 750;
+}
+/* footer */
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 15px;
+}
+
+footer a {
+  display: inline-block;
+  padding: 15px;
+  font-size: 2rem;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  color: black;
+  margin: 15px;
+  transition: all 1.5s ease;
+}
+
+footer a:hover {
+  color: whitesmoke;
+  color: red;
+  border: 1px solid red;
+  transform: rotateZ(365deg);
+}
+
+/* home button */
+.home-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.home-btn i {
+  font-size: 2.5drem;
+  padding: 10px;
+  background-color: red;
+  border-radius: 50px;
+  color: whitesmoke;
+}
